@@ -1,0 +1,43 @@
+            h1 {
+                color: bisque;
+                text-align: center;
+            }
+
+            p {
+                color: blueviolet;
+                font-style: italic;
+            }
+
+            a {
+                color: cadetblue;
+                font-size: 20px;
+            }
+
+            img {
+                border: 4px solid burlywood;
+            }
+
+            .myclass1 {
+                background-color: paleturquoise;
+                color: blueviolet;
+            }
+
+            .class2 {
+                background-color: aqua;
+                color: black;
+                font-size: 14px;
+            }
+
+            #id1 {
+                background-color: brown;
+            }
+
+            #id2 {
+                border: 10px dashed purple;
+            }
+
+            body {
+                background-image: url('cool_image.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
