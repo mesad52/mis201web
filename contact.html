@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title> My Personal Webpage </title>
+        <link rel="icon" type="image/x-icon" href="cool_image.ico">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Register</h1>
+            
+        </header>
+
+        <nav>
+
+            <a href="home.html" class="class1"> Home </a>
+            <a href="about.html" class="class1"> About </a>
+            <a href="contact.html" class="class1"> Contact </a>
+            <a href="courses.html" class="class1"> Courses </a>
+
+        </nav>
+
+        <main>
+                
+                <p>In order to get in contact with me, please register.</p>
+                <hr>
+
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" min="15" required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required>
+                <br><br>
+
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                
+                <hr>
+
+                <p>Year of Study:</p>
+                <input type="radio" id="year1" name="year" value="1" checked>
+                <label for="year1">1st Year</label>
+                <input type="radio" id="year2" name="year" value="2">
+                <label for="year2">2nd Year</label>
+                <input type="radio" id="year3" name="year" value="3">
+                <label for="year3">3rd Year</label>
+                <input type="radio" id="year4" name="year" value="4">
+                <label for="year4">4th Year</label>
+
+                <p>Areas of Interest:</p>
+                <input type="checkbox" id="web" name="interest" value="web">
+                <label for="web">Web Development</label>
+                <input type="checkbox" id="ai" name="interest" value="ai">
+                <label for="ai">Artificial Intelligence</label>
+                <input type="checkbox" id="sd" name="interest" value="sd">
+                <label for="sd">Software Development</label>
+                <br><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="mis">Management Information Systems</option>
+                    <option value="business">Business Administration</option>
+                    <option value="economics">Economics</option>
+                    <option value="cyber security">Cyber Security</option>
+                    <option value="mathematics">Mathematics</option>
+                </select>
+
+                <hr>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="10" cols="50"></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+    <footer>
+        &copy; 2026 My Personal Webpage</footer>
+    </body>
+
+</html>
