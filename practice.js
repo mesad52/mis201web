@@ -67,3 +67,67 @@ calc.addEventListener("click", (e) => {
     vip.textContent = "VIP Total: " + sum;
         
 });
+
+const temperatures = [18, 24, 15, 31, 22, 29];
+
+let highest = temperatures[0];
+
+for (i = 0; i < temperatures.length; i++) {
+    if (temperatures[i] > highest) {
+        highest = temperatures[i];
+    }
+        
+}
+
+console.log(highest);
+
+
+const bouquets = [
+  { name: "White Rose", price: 250, inStock: true },
+  { name: "Red Rose", price: 320, inStock: false },
+  { name: "Pink Tulip", price: 180, inStock: true },
+  { name: "Orchid", price: 450, inStock: true }
+];
+
+for (let i = 0; i < bouquets.length; i++) {
+    if (bouquets[i].inStock === true && bouquets[i].price <=300) {
+        console.log(bouquets[i].name);
+    }
+}
+
+let scoreInput = document.getElementById("score-input");
+let controlBtn = document.getElementById("ctrl-btn");
+let gradeOutput = document.getElementById("grade-output");
+
+controlBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    const scoring = Number(scoreInput.value);
+    if (scoring < 0 || scoring > 100) {
+        gradeOutput.textContent = "Invalid Grade!"
+        gradeOutput.style.color = "blue";
+    } else if (scoring >= 50) {
+        gradeOutput.textContent = "Passed!"
+        gradeOutput.style.color = "green";
+    } else {
+        gradeOutput.textContent = "Failed!"
+        gradeOutput.style.color = "red";
+    }
+});
+
+const orders = [
+  { id: 101, total: 150, delivered: true },
+  { id: 102, total: 80, delivered: false },
+  { id: 103, total: 220, delivered: true },
+  { id: 104, total: 95, delivered: true }
+];
+
+let anything = 0;
+
+for (let i = 0; i < orders.length; i++) {
+    if (orders[i].delivered === true && orders[i].total >= 100) {
+        anything += orders[i].total
+    }
+};
+
+console.log(anything);
